@@ -1,1 +1,10 @@
-<p>hamburger works!</p>
+<nav id="sidenav-1" class="sidenav">
+  <ul class="nav flex-column">
+    <li *ngFor="let item of items" class="nav-item">
+      <a class="nav-link" (click)="onClick($event,item.value)">
+        <span>{{item.name}}</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+<!-- Sidenav -->
